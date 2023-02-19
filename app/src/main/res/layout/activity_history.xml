@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".History">
+
+    <Button
+        android:id="@+id/btClear"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:imeActionLabel="Clear all"
+        android:labelFor="@id/btClear"
+        android:textColor="@color/white"
+        android:textSize="55dp"
+        app:icon="@android:drawable/ic_delete">
+
+    </Button>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="insideInset">
+
+        <TextView
+            android:id="@+id/txHis"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:text="HISTORY"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+    </ScrollView>
+
+
+</LinearLayout>
